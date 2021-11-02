@@ -1,1 +1,1 @@
-## This is Shlomy and Yuval's project from Computer structure course.
+## This is Shlomi and Yuval's project from Computer structure course.
