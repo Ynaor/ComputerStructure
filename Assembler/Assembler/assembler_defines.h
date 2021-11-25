@@ -1,4 +1,5 @@
 #pragma once
+#define _CRT_SECURE_NO_WARNINGS
 
 #include <string.h>
 
@@ -12,10 +13,8 @@
 
 
 
-
 enum eREGISTERS {
 	// Will map registers names and their number
-
 	$zero, // Constant zero 
 	$imm1, // Sign extended immediate 1
 	$imm2, // Sign extended immediate 2
@@ -56,6 +55,9 @@ typedef struct Label {
 	char label_name[LABEL_MAX_LEN];
 
 }Label;
+
+static char* opcode_list[22] = {"add", "sub", "mac", "and", "or ", "xor", "sll", "sra", "srl", "beq", "bne", "blt", "bgt", "ble", "bge", "jal", "lw", "sw", "reti", "in", "out", "halt"};
+static char* registers_list[17] = { "$zero", "$imm1", "$imm2", "$v0", "$a0", "$a1", "$a2", "$t0", "$t0", "$t1", "$t2", "$s0","$s1", "$s2", "$gp", "$sp", "$ra" };
 
 
 #endif

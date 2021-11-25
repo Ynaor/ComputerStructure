@@ -10,9 +10,9 @@
 int main() {
 
    
-    static Instruction instructions_list[INSTRUCTION_MAX_LEN]={0}; // creating a new instructions list and initizliaing all values to zero
-    //TODO: creating all required global variables 
-
+    static Instruction instructionsArr[INSTRUCTION_MAX_LEN] = { 0 }; // creating a new instructions list and initizliaing all values to zero
+    static Label LabelsArr[NUMBER_OF_MEMORY_ELEMETS] = { 0 };
+    static int dataMemArr[DATA_MEMORY_CELLS] = { 0 };
 
     return 0;
 
